@@ -1,21 +1,21 @@
-require 'rails_helper'
+# require 'rails_helper'
 
-RSpec.describe "artists/edit", type: :view do
-  before(:each) do
-    @artist = assign(:artist, Artist.create!(
-      :name => "MyString",
-      :bio => "MyText"
-    ))
-  end
+# RSpec.describe "artists/edit", type: :view do
+#   before(:each) do
+#     @artist = assign(:artist, Artist.create!(
+#       :name => "MyString",
+#       :bio => "MyText"
+#     ))
+#   end
 
-  it "renders the edit artist form" do
-    render
+#   it "renders the edit artist form" do
+#     render
 
-    assert_select "form[action=?][method=?]", artist_path(@artist), "post" do
+#     assert_select "form[action=?][method=?]", artist_path(@artist), "post" do
 
-      assert_select "input#artist_name[name=?]", "artist[name]"
+#       assert_select "input#artist_name[name=?]", "artist[name]"
 
-      assert_select "textarea#artist_bio[name=?]", "artist[bio]"
-    end
-  end
-end
+#       assert_select "textarea#artist_bio[name=?]", "artist[bio]"
+#     end
+#   end
+# end
